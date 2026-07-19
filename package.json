@@ -5,12 +5,13 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && next build",
     "audit": "tsx src/index.ts",
     "dev": "next dev",
     "dev:cli": "tsx watch src/index.ts",
     "web:build": "next build",
-    "start": "next start"
+    "start": "next start -p 8080",
+    "lint": "next lint"
   },
   "bin": {
     "ai-audit": "./dist/index.js"
